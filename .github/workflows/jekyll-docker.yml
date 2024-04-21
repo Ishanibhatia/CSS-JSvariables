@@ -4,6 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
+<<<<<<< Updated upstream
     branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -20,6 +21,10 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+=======
+    branches:
+      - master  # Change this to your main branch name if it's different
+>>>>>>> Stashed changes
 
 jobs:
   # Single deploy job since we're just deploying
